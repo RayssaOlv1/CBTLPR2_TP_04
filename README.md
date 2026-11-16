@@ -41,11 +41,10 @@ Para configurar:
 1. Abra as propriedades do projeto no NetBeans.
 2. Acesse a seção Run
 3. No campo VM Options, informe o caminho da pasta lib:
-
 ```bash
 -Djava.library.path="CAMINHO_DA_PASTA_DA_DLL\lib"
 ```
-4.Salve as configurações
+4. Salve as configurações
 
 **Observações:**
 - Substitua `CAMINHO_DA_PASTA_DA_DLL` pelo caminho da pasta onde a DLL está armazenada.
