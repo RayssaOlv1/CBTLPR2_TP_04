@@ -33,6 +33,25 @@ A conexão está configurada para:
 
 Caso necessário, ajuste a URL de conexão no arquivo `Database.java` conforme a configuração do SQL Server.
 
+## Driver JDBC (DLL)
+
+O projeto disponibilizará a DLL necessária para autenticação integrada do Windows na pasta lib.
+
+Para configurar:
+1. Abra as propriedades do projeto no NetBeans.
+2. Acesse a seção Run
+3. No campo VM Options, informe o caminho da pasta lib:
+
+```bash
+-Djava.library.path="CAMINHO_DA_PASTA_DA_DLL\lib"
+```
+4.Salve as configurações
+
+**Observações:**
+- Substitua `CAMINHO_DA_PASTA_DA_DLL` pelo caminho da pasta onde a DLL está armazenada.
+- A arquitetura da DLL deve ser compatível com a versão do Java instalado (x64 ou x86).
+- Essa configuração é necessária para que o driver JDBC encontre a biblioteca utilizada na autenticação integrada do Windows.
+
 ## Como executar
 
 1. Abra o projeto em uma IDE compatível com Maven, como NetBeans.
