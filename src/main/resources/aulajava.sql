@@ -3,13 +3,13 @@ IF DB_ID(N'aulajava') IS NULL
 GO
 
 use aulajava;
-GO;
+GO
 
 CREATE TABLE tbcargos (
     cd_cargo INTEGER PRIMARY KEY,
     ds_cargo VARCHAR(100) NOT NULL
 );
-GO;
+GO
 
 
 CREATE TABLE tbfuncs (
@@ -21,7 +21,7 @@ CREATE TABLE tbfuncs (
         FOREIGN KEY (cod_cargo)
         REFERENCES tbcargos(cd_cargo)
 );
-GO;
+GO
 
 
 INSERT INTO tbcargos (cd_cargo, ds_cargo) VALUES
@@ -30,7 +30,7 @@ INSERT INTO tbcargos (cd_cargo, ds_cargo) VALUES
 (3, 'Programador'),
 (4, 'Estagiario'),
 (5, 'Assistente');
-GO;
+GO
 
 INSERT INTO tbfuncs (cod_func, nome_func, sal_func, cod_cargo) VALUES
 (1001, 'Joao Silva', 5500.00, 1),
@@ -41,13 +41,13 @@ INSERT INTO tbfuncs (cod_func, nome_func, sal_func, cod_cargo) VALUES
 (1006, 'Lucas Ferreira', 4000.00, 3),
 (1007, 'Juliana Lima', 4500.00, 2),
 (1008, 'Rafael Mendes', 6000.00, 1);
-GO;
+GO
 
 SELECT * FROM tbcargos;
-GO;
+GO
 
 SELECT * FROM tbfuncs;
-GO;
+GO
 
 SELECT
     f.cod_func,
@@ -58,5 +58,5 @@ FROM tbfuncs f
 INNER JOIN tbcargos c
     ON f.cod_cargo = c.cd_cargo
 ORDER BY f.cod_func;
-GO;
+GO
 
