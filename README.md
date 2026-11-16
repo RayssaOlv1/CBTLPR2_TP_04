@@ -38,7 +38,7 @@ Caso necessário, ajuste a URL de conexão no arquivo `Database.java` conforme a
 O projeto disponibilizará a DLL necessária para autenticação integrada do Windows na pasta lib.
 
 Para configurar:
-1. Abra as propriedades do projeto no NetBeans.
+1. Abra as propriedades do projeto no NetBeans
 2. Acesse a seção Run
 3. No campo VM Options, informe o caminho da pasta lib:
 ```bash
