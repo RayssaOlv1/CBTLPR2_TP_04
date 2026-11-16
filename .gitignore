@@ -19,6 +19,8 @@
 .DS_Store
 Thumbs.db
 
+target/
+
 # IDEs
 .idea/
 .vscode/
@@ -28,3 +30,4 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
