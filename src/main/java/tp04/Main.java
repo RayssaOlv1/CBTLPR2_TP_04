@@ -21,6 +21,5 @@ até os limites inicial e final.
 public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new FormFuncionario().setVisible(true));
-        System.out.println(System.getProperty("os.arch"));
     }
 }
